@@ -1,0 +1,50 @@
+{
+  "resourceType": "Condition",
+  "id": "fVzHYnA.kX-.aROjQp1ab5iGB4ngPGG5y.ECaiHpXlnA4",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ],
+      "text": "Encounter Diagnosis"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://open.epic.com/FHIR/StructureDefinition/condition-category",
+          "code": "visit-diagnosis",
+          "display": "Visit Diagnosis"
+        }
+      ],
+      "text": "Visit Diagnosis"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "271737000",
+        "display": "Anemia (disorder)"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "code": "285.9",
+        "display": "Anemia, unspecified"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "D64.9",
+        "display": "Anemia, unspecified"
+      }
+    ],
+    "text": "Anemia, unspecified type"
+  },
+  "subject": {
+    "reference": "Patient/eiGqOeNZwy5gULIhW3QqSw0BxAIp41CBIKaedoywBq.03",
+    "display": "Raghavan, Anand"
+  }
+}

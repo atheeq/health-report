@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Health Report — Browser Example</title>
+    <style>
+      body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:16px}
+      .row{display:flex;gap:12px;align-items:center;margin:12px 0}
+      button{padding:8px 12px;border:1px solid #ccc;border-radius:6px;background:#fff;cursor:pointer}
+      pre{background:#f8f9fa;border:1px solid #e5e7eb;padding:8px;border-radius:6px;max-height:240px;overflow:auto}
+    </style>
+  </head>
+  <body>
+    <h1>Health Report — Browser Example</h1>
+    <p>This demo expects you to build the ESM output first, then open this file via a static server.</p>
+    <div class="row">
+      <button id="btn-html">Render HTML (demo bundle)</button>
+      <button id="btn-pdf">Print to PDF (demo bundle)</button>
+    </div>
+    <div class="row">
+      <input type="file" id="file" accept=".json,.xml,application/json,text/xml" />
+      <button id="btn-file-html">Render HTML (from file)</button>
+      <button id="btn-file-pdf">Print to PDF (from file)</button>
+    </div>
+    <div class="row">
+      <button id="btn-sample-html">Render HTML (tests/fixtures sample)</button>
+      <button id="btn-sample-pdf">Print to PDF (tests/fixtures sample)</button>
+    </div>
+    <pre id="out">Loading…</pre>
+    <script type="module">
+      import { renderHtml } from '../../dist/esm/render-html/index.js';
+      import { renderPdfBrowser } from '../../dist/esm/render-pdf-browser/index.js';
+      // Minimal FHIR bundle (Patient only)
+      const bundle = {
+        resourceType: 'Bundle', type: 'collection', entry: [
+          { resource: { resourceType: 'Patient', id: 'p1', name: [{ text: 'Browser Demo' }], birthDate: '1990-01-01' } }
+        ]
+      };
+      const html = await renderHtml(bundle);
+      document.getElementById('out').textContent = html.slice(0, 400) + '\n...';
+      const openHtml = async (input) => {
+        const htmlStr = await renderHtml(input);
+        const w = window.open('', '_blank');
+        w.document.open(); w.document.write(htmlStr); w.document.close();
+      };
+      const pdfHtml = async (input) => { await renderPdfBrowser(input); };
+      document.getElementById('btn-html').addEventListener('click', () => openHtml(bundle));
+      document.getElementById('btn-pdf').addEventListener('click', () => pdfHtml(bundle));
+      async function readSelectedFile() {
+        const f = document.getElementById('file').files?.[0];
+        if (!f) return null;
+        const text = await f.text();
+        if (f.name.endsWith('.json')) {
+          try { return JSON.parse(text); } catch { return null; }
+        }
+        return text; // likely XML
+      }
+      document.getElementById('btn-file-html').addEventListener('click', async () => {
+        const input = await readSelectedFile(); if (input) await openHtml(input);
+      });
+      document.getElementById('btn-file-pdf').addEventListener('click', async () => {
+        const input = await readSelectedFile(); if (input) await pdfHtml(input);
+      });
+      document.getElementById('btn-sample-html').addEventListener('click', async () => {
+        const resp = await fetch('../../tests/fixtures/fhir-bundle.json');
+        const sample = await resp.json();
+        await openHtml(sample);
+      });
+      document.getElementById('btn-sample-pdf').addEventListener('click', async () => {
+        const resp = await fetch('../../tests/fixtures/fhir-bundle.json');
+        const sample = await resp.json();
+        await pdfHtml(sample);
+      });
+    </script>
+  </body>
+  </html>

@@ -1,0 +1,166 @@
+{
+  "resourceType": "Practitioner",
+  "id": "e4aaQ8SRNv.RR8cUCYECUTC0WTQVJut44T.nKhnvoB2Q3",
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "text": "NPI"
+      },
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1871627877"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "INTERNAL"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.697780",
+      "value": " S40984"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "EXTERNAL"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.697780",
+      "value": "S40984"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "EPIC"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.826606",
+      "value": "6009109615006"
+    },
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30011869",
+      "value": "50043864"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "CPSERPAFM"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30058440",
+      "value": "17073"
+    },
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30102837",
+      "value": "50043864"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "SHSERVOICE"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30103823",
+      "value": "33963"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "WBSERLU"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30108648",
+      "value": "05299"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "WBSERCP"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30109220",
+      "value": "17073"
+    },
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30338002",
+      "value": "S0065510"
+    },
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.70008000",
+      "value": "1871627877"
+    },
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.77000239",
+      "value": "CA256497"
+    },
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.77000240",
+      "value": "CA256498"
+    },
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.77000241",
+      "value": "CA256501"
+    },
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.77000243",
+      "value": "P02325156"
+    },
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.77001236",
+      "value": "CA256500"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "INTERNAL"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.836982",
+      "value": " 20005927"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "EXTERNAL"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.836982",
+      "value": "20005927"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "usual",
+      "text": "Maria-Kristina Manigbas",
+      "family": "Manigbas",
+      "given": [
+        "Maria-Kristina"
+      ]
+    }
+  ],
+  "gender": "female",
+  "photo": [
+    {
+      "contentType": "image/jpg",
+      "url": "https://a.mktgcdn.com/p/WGC34nHVRf4Qt8_-arsUPhlqZDOLFKlTyLRKnZDVsCw/480x480.jpg"
+    }
+  ],
+  "communication": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.6.99",
+          "code": "en",
+          "display": "English"
+        },
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "en",
+          "display": "English"
+        }
+      ],
+      "text": "English"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "resourceType": "Practitioner",
+  "id": "eZTOdAI5FKY6IRfjMD1R3Rppw4OkC2YwzegazCZI7NYI3",
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "text": "NPI"
+      },
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1700372778"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "INTERNAL"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.697780",
+      "value": " S223550"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "EXTERNAL"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.697780",
+      "value": "S223550"
+    },
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30102837",
+      "value": "51114950"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "SHSERVOICE"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30103823",
+      "value": "193865"
+    },
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30338002",
+      "value": "S0200882"
+    },
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.70008000",
+      "value": "1700372778"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "INTERNAL"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.836982",
+      "value": " 20128200"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "EXTERNAL"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.836982",
+      "value": "20128200"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "usual",
+      "text": "Mara Hernandez",
+      "family": "Hernandez",
+      "given": [
+        "Mara"
+      ]
+    }
+  ],
+  "gender": "female",
+  "photo": [
+    {
+      "contentType": "image/png",
+      "url": "http://a.mktgcdn.com/p/PkdkafE-guRfdOt8AGDp2XxFf7jMgKTXX6KFNCkoV68/200x200.png"
+    }
+  ],
+  "communication": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.6.99",
+          "code": "en",
+          "display": "English"
+        },
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "en",
+          "display": "English"
+        }
+      ],
+      "text": "English"
+    }
+  ]
+}

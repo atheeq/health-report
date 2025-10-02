@@ -1,0 +1,141 @@
+{
+  "resourceType": "Coverage",
+  "id": "fboODFW5n30PrHWcOINMD7dICu6c5oRcIgrAeTtLLBJo4",
+  "extension": [
+    {
+      "valueReference": {
+        "identifier": {
+          "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.776782",
+          "value": "25000002"
+        },
+        "display": "BLUESHIELD"
+      },
+      "url": "http://open.epic.com/FHIR/StructureDefinition/extension/carrier"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.678671",
+      "value": "34226157"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MB",
+            "display": "Member Number"
+          }
+        ]
+      },
+      "value": "911817503-000"
+    }
+  ],
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "https://nahdo.org/sopt",
+        "code": "5",
+        "display": "PRIVATE HEALTH INSURANCE"
+      }
+    ],
+    "text": "PRIVATE HEALTH INSURANCE"
+  },
+  "subscriber": {
+    "reference": "Patient/eiGqOeNZwy5gULIhW3QqSw0BxAIp41CBIKaedoywBq.03",
+    "display": "Raghavan, Anand"
+  },
+  "subscriberId": "911817503-000",
+  "beneficiary": {
+    "reference": "Patient/eiGqOeNZwy5gULIhW3QqSw0BxAIp41CBIKaedoywBq.03",
+    "display": "Raghavan, Anand"
+  },
+  "relationship": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.10.678671.305",
+        "code": "01",
+        "display": "Self"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+        "code": "self",
+        "display": "Self"
+      }
+    ],
+    "text": "Self"
+  },
+  "period": {
+    "start": "2023-12-01",
+    "end": "2024-11-30"
+  },
+  "payor": [
+    {
+      "reference": "Organization/e9k1w2ki1KwgJhC149MaaAw3",
+      "identifier": {
+        "use": "official",
+        "system": "http://open.epic.com/FHIR/StructureDefinition/payer-id",
+        "value": "14001"
+      },
+      "display": "Blue Shield Sphs HMO"
+    }
+  ],
+  "class": [
+    {
+      "extension": [
+        {
+          "valueIdentifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.76.2.7.3.808071.15",
+            "value": "W0124833M0030282"
+          },
+          "url": "http://open.epic.com/FHIR/StructureDefinition/extension/alternate-id"
+        },
+        {
+          "valueIdentifier": {
+            "use": "secondary",
+            "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.808071",
+            "value": "25136314"
+          },
+          "url": "http://open.epic.com/FHIR/StructureDefinition/extension/epic-id"
+        }
+      ],
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+            "code": "group",
+            "display": "Group"
+          }
+        ]
+      },
+      "value": "W0124833",
+      "name": "BS-W0124833-M0030282"
+    },
+    {
+      "extension": [
+        {
+          "valueIdentifier": {
+            "use": "secondary",
+            "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.698080",
+            "value": "97110"
+          },
+          "url": "http://open.epic.com/FHIR/StructureDefinition/extension/epic-id"
+        }
+      ],
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+            "code": "plan",
+            "display": "Plan"
+          }
+        ]
+      },
+      "value": "M0030282",
+      "name": "BS M0030282 $30"
+    }
+  ],
+  "order": 7
+}

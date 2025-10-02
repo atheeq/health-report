@@ -1,0 +1,64 @@
+{
+  "resourceType": "Immunization",
+  "id": "e1HyXK.L7DpJOWyIvLd7AHZmYXPawbuBdj9z1Tq.spS43",
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.768076",
+      "value": "161541368"
+    }
+  ],
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "code": "207"
+      }
+    ],
+    "text": "Moderna 12+ Monovalent (Red Cap - DO NOT DILUTE) COVID-19 Vaccine INJ"
+  },
+  "patient": {
+    "reference": "Patient/eiGqOeNZwy5gULIhW3QqSw0BxAIp41CBIKaedoywBq.03",
+    "display": "Raghavan, Anand"
+  },
+  "occurrenceDateTime": "2021-04-09",
+  "primarySource": false,
+  "reportOrigin": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.10.768076.4082",
+        "code": "4",
+        "display": "Auto Reconciled From Outside Source"
+      }
+    ],
+    "text": "Auto Reconciled From Outside Source"
+  },
+  "location": {
+    "display": "City College San Francisco Mass Vaccine Drive-Thro"
+  },
+  "manufacturer": {
+    "display": "Moderna US Inc"
+  },
+  "lotNumber": "041B21A",
+  "site": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.10.768076.4040",
+        "code": "7",
+        "display": "Deltoid Left"
+      }
+    ],
+    "text": "Deltoid Left"
+  },
+  "route": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.10.768076.4030",
+        "code": "2",
+        "display": "Intramuscular"
+      }
+    ],
+    "text": "Intramuscular"
+  }
+}

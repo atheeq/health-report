@@ -1,0 +1,73 @@
+{
+  "resourceType": "Observation",
+  "id": "fqoyY4FzELJDEFXKbgLWd3CF1fGp4Qibz6sr2oq4fvzY4",
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ],
+      "text": "Vital Signs"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.707679",
+        "code": "8",
+        "display": "Pulse"
+      },
+      {
+        "system": "http://open.epic.com/FHIR/StructureDefinition/observation-flowsheet-id",
+        "code": "tryUvrfw33eLJeJ.1Kxg0mQ0",
+        "display": "Pulse"
+      },
+      {
+        "system": "urn:oid:1.2.246.537.6.96",
+        "code": "8867-4"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "8716-3",
+        "display": "Vital signs"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "8867-4",
+        "display": "Heart rate"
+      }
+    ],
+    "text": "Pulse"
+  },
+  "subject": {
+    "reference": "Patient/eiGqOeNZwy5gULIhW3QqSw0BxAIp41CBIKaedoywBq.03",
+    "display": "Raghavan, Anand"
+  },
+  "encounter": {
+    "reference": "Encounter/eqhUuq-f7VYATz2e.6B5dZw3",
+    "identifier": {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.3.698084.8",
+      "value": "1323372439"
+    },
+    "display": "Office Visit"
+  },
+  "effectiveDateTime": "2024-04-19T16:52:00Z",
+  "issued": "2024-04-19T16:53:51Z",
+  "performer": [
+    {
+      "reference": "Practitioner/etJCMWhzMHXbCYo4ARp6XAw3",
+      "display": "Gloria R"
+    }
+  ],
+  "valueQuantity": {
+    "value": 59,
+    "unit": "/min",
+    "system": "http://unitsofmeasure.org",
+    "code": "/min"
+  }
+}

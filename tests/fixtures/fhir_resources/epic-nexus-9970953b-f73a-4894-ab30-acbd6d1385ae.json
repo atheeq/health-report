@@ -1,0 +1,104 @@
+{
+  "resourceType": "Procedure",
+  "id": "fk.zJIdWllxwRyg-l6jzB.zPOIOIihMD4Qu4EerFVgSg4",
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "text": "ORL"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798276",
+      "value": "1505"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "EAP"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.696580",
+      "value": "14493"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "OPE"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798069",
+      "value": "90"
+    }
+  ],
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "387713003",
+        "display": "Surgical procedure"
+      }
+    ],
+    "text": "Surgical Procedures"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "code": "44950",
+        "display": "PR APPENDECTOMY"
+      }
+    ],
+    "text": "Removal of appendix (APPENDECTOMY)"
+  },
+  "subject": {
+    "reference": "Patient/erXuFYUfucBZaryVksYEcMg3",
+    "display": "Lopez, Camila Maria"
+  },
+  "encounter": {
+    "reference": "Encounter/eGmO0h.1.UQQrExl4bfM7OQ3",
+    "identifier": {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+      "value": "29545"
+    },
+    "display": "Surgery"
+  },
+  "performedPeriod": {
+    "start": "2023-06-06T13:56:00Z",
+    "end": "2023-06-06T14:56:00Z"
+  },
+  "recorder": {
+    "reference": "Practitioner/eHP1iZcoohQAKIcKyP6CDvA3",
+    "type": "Practitioner",
+    "display": "Robert Z"
+  },
+  "location": {
+    "reference": "Location/el.Nc4rfzXa7Ml9v6gin1Pw3",
+    "display": "EHS Hospital"
+  },
+  "bodySite": [
+    {
+      "extension": [
+        {
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.798276.2010",
+                "code": "4",
+                "display": "N/A"
+              }
+            ],
+            "text": "N/A"
+          },
+          "url": "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier"
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.798276.2015",
+          "code": "10",
+          "display": "Abdomen"
+        }
+      ],
+      "text": "Abdomen"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "resourceType": "Encounter",
+  "id": "ePd4DCIwJ7Pd1PKZGLAOStg3",
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.3.698084.8",
+      "value": "1163300410"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+    "code": "4",
+    "display": "HOV"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.840.114350.1.13.76.2.7.10.698084.10110",
+          "code": "703",
+          "display": "Outpatient"
+        }
+      ],
+      "text": "Outpatient"
+    },
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.840.114350.1.13.76.2.7.10.698084.30",
+          "code": "3",
+          "display": "Hospital Encounter"
+        }
+      ],
+      "text": "Hospital Encounter"
+    },
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.808267",
+          "code": "15050001",
+          "display": "Lab"
+        }
+      ],
+      "text": "Lab"
+    },
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.840.114350.1.13.76.2.7.10.698084.18875",
+          "code": "5502",
+          "display": "Elective"
+        }
+      ],
+      "text": "Elective"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/eiGqOeNZwy5gULIhW3QqSw0BxAIp41CBIKaedoywBq.03",
+    "display": "Raghavan, Anand"
+  },
+  "participant": [
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "REF",
+              "display": "referrer"
+            }
+          ],
+          "text": "referrer"
+        }
+      ],
+      "individual": {
+        "reference": "Practitioner/eZTOdAI5FKY6IRfjMD1R3Rppw4OkC2YwzegazCZI7NYI3",
+        "type": "Practitioner",
+        "display": "Mara Hernandez"
+      }
+    }
+  ],
+  "period": {
+    "start": "2022-04-08T21:38:24Z",
+    "end": "2022-04-09T06:59:00Z"
+  },
+  "account": [
+    {
+      "identifier": {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.726582",
+        "value": "410115575"
+      },
+      "display": "RAGHAVAN,ANAND"
+    }
+  ],
+  "hospitalization": {
+    "extension": [
+      {
+        "valueDateTime": "2022-04-08T21:38:00Z",
+        "url": "http://open.epic.com/FHIR/StructureDefinition/extension/observation-datetime"
+      }
+    ],
+    "admitSource": {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.840.114350.1.13.76.2.7.10.698084.10310",
+          "code": "5511",
+          "display": "Physician/Self Referral"
+        }
+      ],
+      "text": "Physician/Self Referral"
+    },
+    "dischargeDisposition": {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.840.114350.1.13.76.2.7.10.698084.18888",
+          "code": "1",
+          "display": "Home or Self Care"
+        }
+      ],
+      "text": "Home or Self Care"
+    }
+  },
+  "location": [
+    {
+      "location": {
+        "reference": "Location/egKeHLVY3ulbxQxSwbF0ii9d9yMcpleU09F9aiLQ2lEg3",
+        "display": "CPMC Mission Bernal Campus Lab Draw Site 1580"
+      },
+      "period": {
+        "start": "2022-04-08T21:38:00Z",
+        "end": "2022-04-09T06:59:00Z"
+      }
+    },
+    {
+      "location": {
+        "reference": "Location/egKeHLVY3ulbxQxSwbF0ii9d9yMcpleU09F9aiLQ2lEg3",
+        "display": "CPMC Mission Bernal Campus Lab Draw Site 1580"
+      }
+    },
+    {
+      "location": {
+        "reference": "Location/e-2yRijoQ0PTgRzoeQ.5pcA3",
+        "display": "WEST BAY REGION ACUTE CARE SERVICES"
+      }
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "exgONIAUTLiyUCuetFGNJkPf65uGzMzhkSFKOOfE6f6s3",
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PLAC",
+            "display": "Placer Identifier"
+          }
+        ],
+        "text": "Placer Identifier"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.798268",
+      "value": "1902976166"
+    },
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "FILL",
+            "display": "Filler Identifier"
+          }
+        ],
+        "text": "Filler Identifier"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.3.798268.800",
+      "value": "376L674520_F2499229_HCVPR_EHR"
+    },
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "FILL",
+            "display": "Filler Identifier"
+          }
+        ],
+        "text": "Filler Identifier"
+      },
+      "system": "https://open.epic.com/FHIR/76/order-accession-number/SHSSLAB",
+      "value": "376L674520_F2499229_HCVPR_EHR"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/e06msAYxm7qEkQgzGnqCbbxKNUvHW2WwXaD8IEG8xYqY3",
+      "display": "HEPATITIS C ANTIBODY RFLX HCV RNA PCR"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.840.114350.1.13.76.2.7.10.798268.30",
+          "code": "LAB IMMUNOLO"
+        }
+      ],
+      "text": "LAB IMMUNOSEROLOGY"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        }
+      ],
+      "text": "Laboratory"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "13955-0"
+      },
+      {
+        "system": "urn:oid:2.16.840.1.113883.6.12",
+        "code": "86803",
+        "display": "PR HEPATITIS C AB TEST"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.40003839",
+        "code": "HCVPR"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.40003843",
+        "code": "144050"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30100526",
+        "code": "8472"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.12",
+        "code": "8210"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30338161",
+        "code": "LAB2302"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30338673",
+        "code": "HCVRX"
+      }
+    ],
+    "text": "HEPATITIS C ANTIBODY RFLX HCV RNA PCR"
+  },
+  "subject": {
+    "reference": "Patient/eiGqOeNZwy5gULIhW3QqSw0BxAIp41CBIKaedoywBq.03",
+    "display": "Raghavan, Anand"
+  },
+  "encounter": {
+    "reference": "Encounter/eAAYnG7.aAcIi5mz02Rmk6w3",
+    "identifier": {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.3.698084.8",
+      "value": "1323541525"
+    },
+    "display": "Ancillary Visit"
+  },
+  "effectiveDateTime": "2024-04-19T17:24:00Z",
+  "issued": "2024-04-20T08:10:49Z",
+  "performer": [
+    {
+      "reference": "Practitioner/evSMUeaPVS8FGvHvfx1TEqw3",
+      "type": "Practitioner",
+      "display": "Robert Vazquez, MD"
+    },
+    {
+      "reference": "Organization/fgrn2o1ZCregmngJIenPwbQ4",
+      "type": "Organization",
+      "display": "SUTTER HEALTH SHARED LABORATORY"
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/fd852-Xvyd7LrwQbIsM4rymlmNNSuX3Us7PKNwF7tqeU4",
+      "display": "Component (1): HEPATITIS CV AB"
+    }
+  ]
+}

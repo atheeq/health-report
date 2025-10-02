@@ -1,0 +1,302 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "p1",
+        "name": [{ "text": "Jane Doe", "given": ["Jane"], "family": "Doe" }],
+        "birthDate": "1985-04-12"
+      }
+    },
+    {"resource":{
+      "resourceType":"ServiceRequest",
+      "id":"sr1",
+      "status":"active",
+      "code":{"text":"Chest X-ray"},
+      "authoredOn":"2024-06-14",
+      "requester":{"display":"Dr. Smith"}
+    }},
+    {"resource":{
+      "resourceType":"PractitionerRole","id":"role1","practitioner":{"display":"Dr. John Smith"},"organization":{"display":"ACME Health"},"specialty":[{"text":"Cardiology"}],"location":[{"display":"Clinic A"}]
+    }},
+    {"resource":{
+      "resourceType":"Location","id":"loc1","name":"Clinic A","type":[{"text":"Outpatient"}],"address":{"line":["123 Main St"],"city":"Metropolis","state":"CA","postalCode":"94000"},"telecom":[{"value":"555-0000"}]
+    }},
+    {"resource":{
+      "resourceType":"RelatedPerson","id":"rp1","name":[{"text":"Jane Doe"}],"relationship":[{"coding":[{"display":"Spouse"}]}],"telecom":[{"value":"555-0200"}]
+    }},
+    {"resource":{
+      "resourceType":"RiskAssessment","id":"ra1","code":{"text":"Cardiovascular risk"},"occurrenceDateTime":"2024-06-12","prediction":[{"probabilityDecimal":0.18}]
+    }},
+    {"resource":{
+      "resourceType":"ImagingStudy",
+      "id":"is1",
+      "started":"2024-06-16T12:00:00Z",
+      "description":"Chest X-ray PA and lateral",
+      "series":[{"modality":{"code":"XR","display":"X-ray"},"instance":[{},{}]}]
+    }},
+    {"resource":{
+      "resourceType":"Appointment",
+      "id":"ap1",
+      "status":"booked",
+      "appointmentType":{"text":"Follow-up"},
+      "start":"2024-06-20T09:00:00Z",
+      "end":"2024-06-20T09:15:00Z",
+      "participant":[{"actor":{"display":"Clinic A","reference":"Location/1"}}]
+    }},
+    {"resource":{
+      "resourceType":"Organization",
+      "id":"org1","name":"ACME Health","type":[{"text":"Payer"}],"telecom":[{"value":"1-800-111-2222"}]
+    }},
+    {"resource":{
+      "resourceType":"Practitioner",
+      "id":"pract1","name":[{"text":"Dr. John Smith","given":["John"],"family":"Smith"}],"telecom":[{"value":"555-0100"}]
+    }},
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "e1",
+        "type": [{"text":"Office visit"}],
+        "period": {"start":"2024-01-10T09:00:00Z","end":"2024-01-10T09:30:00Z"},
+        "location": [{"location": {"display": "Clinic A"}}],
+        "reasonCode": [{"text": "Routine checkup"}]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "pr1",
+        "code": {"text":"EKG"},
+        "performedDateTime": "2024-01-10T09:10:00Z",
+        "performer": [{"actor": {"display": "Dr. Smith"}}]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Device",
+        "id": "d1",
+        "type": {"text":"Pacemaker"},
+        "status": "active",
+        "udiCarrier": [{"deviceIdentifier": "UDI-123"}]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "dr1",
+        "description": "Discharge summary",
+        "type": {"coding":[{"system":"http://loinc.org","code":"18842-5","display":"Discharge summary"}]},
+        "date": "2024-01-11",
+        "content": [{"attachment": {"url":"https://example.org/doc.pdf","title":"Discharge summary"}}]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "r1",
+        "code": {"text": "Basic metabolic panel"},
+        "effectiveDateTime": "2024-06-15T11:00:00Z",
+        "result": [{"reference": "Observation/o1"}]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "a1",
+        "clinicalStatus": { "coding": [{ "code": "active" }] },
+        "criticality": "high",
+        "code": { "text": "Peanut", "coding": [{ "system": "http://snomed.info/sct", "code": "256349002", "display": "Peanut" }] },
+        "reaction": [{ "manifestation": [{ "text": "Hives" }] }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "im1",
+        "status": "completed",
+        "vaccineCode": { "text": "COVID-19 mRNA", "coding": [{ "system": "http://hl7.org/fhir/sid/cvx", "code": "207", "display": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose" }] },
+        "occurrenceDateTime": "2021-04-15"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "c1",
+        "code": { "text": "Hypertension", "coding": [{ "system": "http://snomed.info/sct", "code": "38341003", "display": "Hypertensive disorder" }] },
+        "onsetDateTime": "2020-01-01",
+        "clinicalStatus": { "coding": [{ "code": "active" }] }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "m1",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Lisinopril",
+          "coding": [{ "system": "http://www.nlm.nih.gov/research/umls/rxnorm", "code": "29046", "display": "Lisinopril 10 MG Oral Tablet" }]
+        },
+        "dosageInstruction": [{ "text": "10 mg daily" }],
+        "authoredOn": "2023-05-20"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "o1",
+        "category": [{ "coding": [{ "code": "laboratory", "display": "Laboratory" }] }],
+        "code": { "text": "Hemoglobin A1c" },
+        "valueQuantity": { "value": 7.2, "unit": "%" },
+        "effectiveDateTime": "2024-06-15T10:00:00Z"
+      }
+    }
+    ,
+    {"resource":{
+      "resourceType":"Observation",
+      "id":"o2",
+      "category":[{"coding":[{"code":"vital-signs","display":"Vital Signs"}]}],
+      "code":{"text":"Heart rate"},
+      "valueQuantity":{"value":72,"unit":"bpm"},
+      "effectiveDateTime":"2024-06-15T10:05:00Z"
+    }}
+    ,
+    {"resource":{
+      "resourceType":"CarePlan","id":"cp1","title":"Hypertension management","status":"active","period":{"start":"2024-01-01"},
+      "activity":[{"detail":{"description":"Lifestyle modification"}}]
+    }}
+    ,
+    {"resource":{
+      "resourceType":"Goal","id":"g1","description":{"text":"Reduce blood pressure"},"lifecycleStatus":"active","target":[{"detailString":"<130/80 mmHg"}]
+    }}
+    ,
+    {"resource":{
+      "resourceType":"Coverage","id":"cvg1","status":"active","type":{"text":"PPO"},"payor":[{"display":"ACME Health"}],"period":{"start":"2024-01-01","end":"2024-12-31"},"subscriberId":"MEM123"
+    }}
+    ,
+    {"resource":{
+      "resourceType":"FamilyMemberHistory","id":"fh1","relationship":{"text":"Father"},"condition":[{"code":{"text":"Myocardial infarction"},"onsetString":"Age 55"}]
+    }}
+    ,
+    {"resource":{
+      "resourceType":"QuestionnaireResponse","id":"qr1","questionnaire":{"display":"PHQ-9"},"authored":"2024-06-10",
+      "item":[{"text":"Little interest or pleasure in doing things","answer":[{"valueString":"Several days"}]},{"text":"Feeling down, depressed, or hopeless","answer":[{"valueString":"More than half the days"}]}]
+    }}
+    ,
+    {"resource":{
+      "resourceType":"ExplanationOfBenefit","id":"eob1","status":"active","type":{"text":"Professional"},"billablePeriod":{"start":"2024-05-01","end":"2024-05-31"},"payment":{"amount":{"value":120,"currency":"USD"}},"claim":{"reference":"Claim/123"}
+    }}
+    ,
+    {"resource":{
+      "resourceType":"Claim","id":"clm1","status":"active","type":{"text":"Professional"},"created":"2024-05-15","provider":{"display":"Dr. Smith"}
+    }}
+    ,
+    {"resource":{
+      "resourceType":"ClaimResponse","id":"cr1","status":"active","outcome":{"text":"complete"},"created":"2024-05-20"
+    }}
+    ,
+    {"resource":{
+      "resourceType":"PaymentNotice","id":"pn1","created":"2024-06-01","amount":{"value":80,"currency":"USD"},"provider":{"display":"ACME Health"}
+    }}
+    ,
+    {"resource":{
+      "resourceType":"PaymentReconciliation","id":"prc1","created":"2024-06-05","total":{"value":200,"currency":"USD"},"disposition":"Settled"
+    }}
+    ,
+    {"resource":{
+      "resourceType":"CoverageEligibilityRequest","id":"cer1","status":"active","purpose":["benefits"],"created":"2024-05-10","servicedPeriod":{"start":"2024-05-01","end":"2024-05-31"}
+    }}
+    ,
+    {"resource":{
+      "resourceType":"CoverageEligibilityResponse","id":"cee1","status":"active","outcome":{"text":"complete"},"created":"2024-05-11","purpose":["benefits"]
+    }}
+    ,
+    {"resource":{
+      "resourceType":"Consent","id":"cons1","scope":{"text":"patient-privacy"},"category":[{"text":"HIPAA"}],"dateTime":"2024-01-01","performer":[{"display":"Patient"}]
+    }}
+    ,
+    {"resource":{
+      "resourceType":"Communication","id":"comm1","sent":"2024-06-02T10:00:00Z","subject":{"display":"Patient"},"payload":[{"contentString":"Your test results are available."}]
+    }}
+    ,
+    {"resource":{
+      "resourceType":"CommunicationRequest","id":"crq1","authoredOn":"2024-06-03","status":"active","requester":{"display":"Nurse"},"payload":[{"contentString":"Please schedule a follow-up."}]
+    }}
+    ,
+    {"resource":{
+      "resourceType":"CareTeam","id":"ct1","name":"Primary Care Team","status":"active","period":{"start":"2023-01-01"},"participant":[{"member":{"display":"Dr. John Smith"}}]
+    }}
+    ,
+    {"resource":{
+      "resourceType":"Task","id":"task1","status":"requested","intent":"order","authoredOn":"2024-06-04","for":{"display":"Patient"},"description":"Schedule lab work"
+    }}
+    ,
+    {"resource":{
+      "resourceType":"AppointmentResponse","id":"apr1","actor":{"display":"Patient"},"participantStatus":"accepted","start":"2024-06-20T09:00:00Z","end":"2024-06-20T09:15:00Z"
+    }}
+    ,
+    {"resource":{
+      "resourceType":"AuditEvent",
+      "id":"ae1",
+      "type":{"text":"Login"}
+    }}
+    ,
+    {"resource":{
+      "resourceType":"Observation",
+      "id":"sh1",
+      "category":[{"coding":[{"code":"social-history","display":"Social History"}]}],
+      "code":{"text":"Tobacco smoking status"},
+      "valueCodeableConcept":{"text":"Former smoker","coding":[{"display":"Former smoker"}]},
+      "effectiveDateTime":"2024-06-01"
+    }}
+    ,
+    {"resource":{
+      "resourceType":"NutritionOrder",
+      "id":"no1",
+      "status":"active",
+      "dateTime":"2024-06-10",
+      "oralDiet":{
+        "type":[{"text":"Low sodium diet"}],
+        "instruction":{"text":"2g sodium"}
+      }
+    }}
+    ,
+    {"resource":{
+      "resourceType":"MedicationAdministration",
+      "id":"ma1",
+      "status":"completed",
+      "medicationCodeableConcept":{"text":"Heparin"},
+      "effectiveDateTime":"2024-06-15T10:05:00Z",
+      "dosage":{"route":{"text":"Subcutaneous"},"dose":{"value":5000,"unit":"unit"}},
+      "performer":[{"actor":{"display":"Nurse A"}}]
+    }}
+    ,
+    {"resource":{
+      "resourceType":"MedicationDispense",
+      "id":"md1",
+      "medicationCodeableConcept":{"text":"Lisinopril"},
+      "whenHandedOver":"2024-06-01",
+      "quantity":{"value":30,"unit":"tablet"},
+      "daysSupply":{"value":30,"unit":"day"},
+      "performer":[{"actor":{"display":"Pharmacy"}}]
+    }}
+    ,
+    {"resource":{
+      "resourceType":"ClinicalImpression",
+      "id":"ci1",
+      "status":"completed",
+      "date":"2024-06-12",
+      "summary":"Overall improving."
+    }}
+    ,
+    {"resource":{
+      "resourceType":"Flag",
+      "id":"fl1",
+      "status":"active",
+      "code":{"coding":[{"display":"Fall risk"}]},
+      "category":[{"text":"safety"}],
+      "period":{"start":"2024-06-01","end":"2024-07-01"}
+    }}
+  ]
+}

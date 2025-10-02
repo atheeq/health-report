@@ -1,0 +1,38 @@
+{
+  "resourceType": "Practitioner",
+  "id": "eLOGtyEcOlLJEXcK4BF4PAw3",
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.1035",
+      "value": "VargaL@sutterhealth.org"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "INTERNAL"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.697780",
+      "value": " S194702"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "EXTERNAL"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.697780",
+      "value": "S194702"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "usual",
+      "text": "Luz V",
+      "family": "V",
+      "given": [
+        "Luz"
+      ]
+    }
+  ]
+}

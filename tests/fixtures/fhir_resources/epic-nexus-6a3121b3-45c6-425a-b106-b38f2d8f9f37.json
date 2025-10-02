@@ -1,0 +1,102 @@
+{
+  "resourceType": "Practitioner",
+  "id": "eM5CWtq15N0WJeuCet5bJlQ3",
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "text": "NPI"
+      },
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1627363736"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "INTERNAL"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.697780",
+      "value": "  FAMMD"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "EXTERNAL"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.697780",
+      "value": "FAMMD"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "PROVID"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.5.737384.6",
+      "value": "1000"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "EPIC"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.5.737384.7",
+      "value": "207Q00000X"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "NPI"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.5.737384.60",
+      "value": "1627363736"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "Epic"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.5.737384.63",
+      "value": "6011"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "INTERNAL"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.836982",
+      "value": "   E1000"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "EXTERNAL"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.836982",
+      "value": "E1000"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "usual",
+      "text": "Physician",
+      "given": [
+        "Physician"
+      ],
+      "_family": {
+        "extension": [
+          {
+            "valueCode": "masked",
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+          }
+        ]
+      }
+    }
+  ],
+  "gender": "male",
+  "photo": [
+    {
+      "url": "Binary/esQeLhUcHfUSQnyrAJ7GV7A3"
+    }
+  ]
+}

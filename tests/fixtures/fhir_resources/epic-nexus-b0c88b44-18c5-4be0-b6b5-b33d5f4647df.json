@@ -1,0 +1,47 @@
+{
+  "resourceType": "CareTeam",
+  "id": "elXzftb61zxJqvM4xV3jTzA3",
+  "status": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "LA28865-6",
+          "display": "Longitudinal care-coordination focused care team"
+        }
+      ],
+      "text": "Longitudinal care-coordination focused care team"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/erXuFYUfucBZaryVksYEcMg3",
+    "display": "Lopez, Camila Maria"
+  },
+  "participant": [
+    {
+      "role": [
+        {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1050",
+              "code": "9",
+              "display": "Family Medicine"
+            },
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.698084.5655",
+              "code": "1",
+              "display": "General"
+            }
+          ],
+          "text": "Family Medicine"
+        }
+      ],
+      "member": {
+        "reference": "Practitioner/eM5CWtq15N0WJeuCet5bJlQ3",
+        "type": "Practitioner",
+        "display": "Physician"
+      }
+    }
+  ]
+}

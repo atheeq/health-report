@@ -1,0 +1,49 @@
+{
+  "resourceType": "Goal",
+  "id": "eQkMeW6kwaLlhQWHCjq6qiQ3",
+  "extension": [
+    {
+      "valueString": "NURSING",
+      "url": "http://open.epic.com/FHIR/StructureDefinition/extension/multiple-expressedby"
+    },
+    {
+      "valueString": "INTERDISCIPLINARY",
+      "url": "http://open.epic.com/FHIR/StructureDefinition/extension/multiple-expressedby"
+    },
+    {
+      "valueString": "RESPIRATORY THERAPY",
+      "url": "http://open.epic.com/FHIR/StructureDefinition/extension/multiple-expressedby"
+    },
+    {
+      "valueString": "SOCIAL WORK",
+      "url": "http://open.epic.com/FHIR/StructureDefinition/extension/multiple-expressedby"
+    }
+  ],
+  "lifecycleStatus": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://open.epic.com/FHIR/StructureDefinition/goal-category",
+          "code": "inpatient-care-plan-goal",
+          "display": "Inpatient Care Plan Goal"
+        }
+      ],
+      "text": "Inpatient Care Plan Goal"
+    }
+  ],
+  "description": {
+    "text": "Absence of infection during hospitalization"
+  },
+  "subject": {
+    "reference": "Patient/erXuFYUfucBZaryVksYEcMg3",
+    "display": "Lopez, Camila Maria"
+  },
+  "startDate": "2023-06-02",
+  "addresses": [
+    {
+      "reference": "Condition/enxs1cxkwzPxvOqZcUj4IVQ3",
+      "display": "Infection - Adult"
+    }
+  ]
+}

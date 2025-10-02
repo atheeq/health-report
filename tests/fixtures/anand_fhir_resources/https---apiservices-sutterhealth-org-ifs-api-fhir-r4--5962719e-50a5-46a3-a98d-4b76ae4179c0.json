@@ -1,0 +1,39 @@
+{
+  "resourceType": "Organization",
+  "id": "e9iaScEEAwKwyx-BQ83iPSw3",
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "text": "TAX"
+      },
+      "system": "urn:oid:2.16.840.1.113883.4.4",
+      "value": "941156581"
+    },
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.696570",
+      "value": "28"
+    }
+  ],
+  "active": true,
+  "name": "Sutter Pacific Medical Foundation",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "866-681-0739",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "text": "PO BOX 254947\r\nSACRAMENTO CA 95865-4947",
+      "line": [
+        "PO BOX 254947"
+      ],
+      "city": "SACRAMENTO",
+      "state": "California",
+      "postalCode": "95865-4947"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "fJB0FRz33KgLWRwYC2Cqeg5sOY.26hL9y6pSzucc-6oE4",
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+        "version": "4.0.0",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+        "version": "4.0.0",
+        "code": "unconfirmed",
+        "display": "Unconfirmed"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1631000175102",
+        "display": "Patient not asked"
+      }
+    ],
+    "text": "Not on File"
+  },
+  "patient": {
+    "reference": "Patient/erXuFYUfucBZaryVksYEcMg3",
+    "display": "Lopez, Camila Maria"
+  }
+}

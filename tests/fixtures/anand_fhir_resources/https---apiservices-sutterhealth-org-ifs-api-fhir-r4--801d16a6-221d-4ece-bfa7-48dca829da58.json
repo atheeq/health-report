@@ -1,0 +1,64 @@
+{
+  "resourceType": "Immunization",
+  "id": "eolJJyNXGOsOEDuPqbaO4KSgM6lY.LQdOINAWN0WJb.o3",
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.768076",
+      "value": "191802406"
+    }
+  ],
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "code": "300"
+      }
+    ],
+    "text": "Pfizer 12+ Bivalent (Gray Cap) COVID-19 Vaccine INJ"
+  },
+  "patient": {
+    "reference": "Patient/eiGqOeNZwy5gULIhW3QqSw0BxAIp41CBIKaedoywBq.03",
+    "display": "Raghavan, Anand"
+  },
+  "occurrenceDateTime": "2022-10-08",
+  "primarySource": false,
+  "reportOrigin": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.10.768076.4082",
+        "code": "4",
+        "display": "Auto Reconciled From Outside Source"
+      }
+    ],
+    "text": "Auto Reconciled From Outside Source"
+  },
+  "location": {
+    "display": "NOE VALLEY PEDIATRICS"
+  },
+  "manufacturer": {
+    "display": "Pfizer U.S."
+  },
+  "lotNumber": "GH9702",
+  "site": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.10.768076.4040",
+        "code": "20",
+        "display": "Arm Right Upper"
+      }
+    ],
+    "text": "Arm Right Upper"
+  },
+  "route": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.10.768076.4030",
+        "code": "2",
+        "display": "Intramuscular"
+      }
+    ],
+    "text": "Intramuscular"
+  }
+}

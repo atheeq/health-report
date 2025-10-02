@@ -1,0 +1,1 @@
+[{"resourceType":"Patient","id":"p1","name":[{"text":"Jane"}]},{"resourceType":"Condition","id":"c1","code":{"text":"Hypertension"}}]

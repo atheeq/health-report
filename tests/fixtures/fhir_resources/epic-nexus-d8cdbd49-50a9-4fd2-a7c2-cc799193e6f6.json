@@ -1,0 +1,30 @@
+{
+  "resourceType": "Goal",
+  "id": "eJBdu4Jy7un.7zNf4qzYPlw3",
+  "lifecycleStatus": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737184.20005",
+          "code": "2",
+          "display": "Exercise"
+        }
+      ],
+      "text": "Exercise"
+    }
+  ],
+  "description": {
+    "text": "Increase physical activity "
+  },
+  "subject": {
+    "reference": "Patient/erXuFYUfucBZaryVksYEcMg3",
+    "display": "Lopez, Camila Maria"
+  },
+  "startDate": "2024-07-08",
+  "expressedBy": {
+    "reference": "Practitioner/ecunm2GDKvuFft.x1SK07aQ3",
+    "type": "Practitioner",
+    "display": "Mustafa Z"
+  }
+}

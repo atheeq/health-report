@@ -1,0 +1,63 @@
+{
+  "resourceType": "Encounter",
+  "id": "eGmO0h.1.UQQrExl4bfM7OQ3",
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+      "value": "29545"
+    }
+  ],
+  "status": "unknown",
+  "class": {
+    "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+    "code": "10",
+    "display": "Surgery Log"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30",
+          "code": "51",
+          "display": "Surgery"
+        }
+      ],
+      "text": "Surgery"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/erXuFYUfucBZaryVksYEcMg3",
+    "display": "Lopez, Camila Maria"
+  },
+  "participant": [
+    {
+      "individual": {
+        "reference": "Practitioner/eM5CWtq15N0WJeuCet5bJlQ3",
+        "type": "Practitioner",
+        "display": "Physician"
+      }
+    }
+  ],
+  "period": {
+    "start": "2023-06-06T16:20:00Z",
+    "end": "2023-06-06T17:35:00Z"
+  },
+  "location": [
+    {
+      "location": {
+        "reference": "Location/efR3SIdpRKF9BFBM5qakt9F5X1mWxjiAGu2hNTKbqOdI3",
+        "display": "EMH Operating Room"
+      }
+    }
+  ],
+  "partOf": {
+    "reference": "Encounter/eoK8nLRcEypNjtns4dgnF3Q3",
+    "identifier": {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+      "value": "29547"
+    },
+    "display": "Emergency Department"
+  }
+}

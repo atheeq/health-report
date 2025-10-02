@@ -1,0 +1,34 @@
+{
+  "resourceType": "Goal",
+  "id": "eLkEMSOFNE4RL33yguSQ5-g3",
+  "lifecycleStatus": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://open.epic.com/FHIR/StructureDefinition/goal-category",
+          "code": "inpatient-care-plan-goal",
+          "display": "Inpatient Care Plan Goal"
+        }
+      ],
+      "text": "Inpatient Care Plan Goal"
+    }
+  ],
+  "description": {
+    "text": "Coordination of Nutrition Care by a Nutrition Professional (RC)"
+  },
+  "subject": {
+    "reference": "Patient/erXuFYUfucBZaryVksYEcMg3",
+    "display": "Lopez, Camila Maria"
+  },
+  "startDate": "2024-07-08",
+  "expressedBy": {
+    "display": "NUTRITION"
+  },
+  "addresses": [
+    {
+      "reference": "Condition/ekGKnC4TXEGgCuqk-F5cu6w3",
+      "display": "Overweight/Obesity (NC-3.3)"
+    }
+  ]
+}

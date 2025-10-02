@@ -1,0 +1,148 @@
+{
+  "resourceType": "Encounter",
+  "id": "e6fzTWmtH3IRM.IC3Yepbtg3",
+  "extension": [
+    {
+      "valueBoolean": false,
+      "url": "http://open.epic.com/FHIR/StructureDefinition/extension/accidentrelated"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.3.698084.8",
+      "value": "890068367"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+    "code": "5",
+    "display": "Appointment"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.840.114350.1.13.76.2.7.10.698084.30",
+          "code": "101",
+          "display": "Office Visit"
+        }
+      ],
+      "text": "Office Visit"
+    },
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.808267",
+          "code": "15400061",
+          "display": "New Patient"
+        }
+      ],
+      "text": "New Patient"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99385",
+          "display": "PR PREV VISIT NEW AGE 18-39"
+        }
+      ],
+      "text": "PR PREV VISIT NEW AGE 18-39"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/eiGqOeNZwy5gULIhW3QqSw0BxAIp41CBIKaedoywBq.03",
+    "display": "Raghavan, Anand"
+  },
+  "participant": [
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "REF",
+              "display": "referrer"
+            }
+          ],
+          "text": "referrer"
+        }
+      ],
+      "individual": {
+        "reference": "Practitioner/ersNjj6WjAeGHCRysCGLUkNevFkGn5h1W9QKGHDfZodY3",
+        "type": "Practitioner",
+        "display": "Lorne Harris, NP"
+      }
+    },
+    {
+      "type": [
+        {
+          "text": "losAuthorizingPhysician"
+        }
+      ],
+      "individual": {
+        "reference": "Practitioner/ersNjj6WjAeGHCRysCGLUkNevFkGn5h1W9QKGHDfZodY3",
+        "type": "Practitioner",
+        "display": "Lorne Harris, NP"
+      }
+    },
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "PART",
+              "display": "Participation"
+            }
+          ],
+          "text": "Participation"
+        }
+      ],
+      "period": {
+        "start": "2017-11-16T19:00:00Z",
+        "end": "2017-11-16T19:40:00Z"
+      },
+      "individual": {
+        "reference": "Practitioner/ersNjj6WjAeGHCRysCGLUkNevFkGn5h1W9QKGHDfZodY3",
+        "display": "Lorne Harris, NP"
+      }
+    }
+  ],
+  "period": {
+    "start": "2017-11-16T19:00:00Z",
+    "end": "2017-11-16T19:40:00Z"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.728286",
+          "code": "30098714",
+          "display": "Establish Care (New Patient Consult)"
+        }
+      ],
+      "text": "Establish Care (New Patient Consult)"
+    },
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.728286",
+          "code": "214",
+          "display": "Injection"
+        }
+      ],
+      "text": "Injection"
+    }
+  ],
+  "location": [
+    {
+      "location": {
+        "reference": "Location/eyXlMU.mR9pR7mMQh.nxu3g3",
+        "display": "Internal Medicine 55 2nd"
+      }
+    }
+  ]
+}

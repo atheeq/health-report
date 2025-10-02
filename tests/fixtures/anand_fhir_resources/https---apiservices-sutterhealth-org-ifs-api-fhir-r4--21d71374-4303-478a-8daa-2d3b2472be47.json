@@ -1,0 +1,67 @@
+{
+  "resourceType": "Observation",
+  "id": "fg03CXwSnMQ3FOxV1YerEQ8kwel.xpBkBesVwODuB2TY4",
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "social-history",
+          "display": "Social History"
+        }
+      ],
+      "text": "Social History"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "11331-6",
+        "display": "Alcohol Use History"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "228273003",
+        "display": "Finding relating to alcohol drinking behavior (finding)"
+      }
+    ],
+    "text": "Alcohol Use History"
+  },
+  "subject": {
+    "reference": "Patient/eiGqOeNZwy5gULIhW3QqSw0BxAIp41CBIKaedoywBq.03",
+    "display": "Raghavan, Anand"
+  },
+  "issued": "2024-04-19T07:00:00Z",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "219006",
+        "display": "Current drinker of alcohol (finding)"
+      }
+    ],
+    "text": "Yes"
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "160573003",
+            "display": "Alcohol intake (observable entity)"
+          }
+        ],
+        "text": "Alcohol intake (observable entity)"
+      },
+      "valueQuantity": {
+        "value": 0.29,
+        "unit": "alcoholic_units/day",
+        "system": "http://unitsofmeasure.org",
+        "code": "{alcoholic_units}/d"
+      }
+    }
+  ]
+}

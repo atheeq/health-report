@@ -1,0 +1,48 @@
+{
+  "resourceType": "Organization",
+  "id": "enRyWnSP963FYDpoks4NHOA3",
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "text": "EPIC"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.5.737384.61",
+      "value": "1627363736"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "NPI"
+      },
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1627363736"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "TAX"
+      },
+      "system": "urn:oid:2.16.840.1.113883.4.4",
+      "value": "112233445"
+    },
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.696570",
+      "value": "10"
+    }
+  ],
+  "active": true,
+  "name": "EHS Service Area",
+  "address": [
+    {
+      "text": "123 Anywhere St.\r\nVERONA WI 53593",
+      "line": [
+        "123 Anywhere St."
+      ],
+      "city": "VERONA",
+      "state": "Wisconsin",
+      "postalCode": "53593"
+    }
+  ]
+}

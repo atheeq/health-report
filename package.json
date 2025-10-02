@@ -1,0 +1,70 @@
+{
+  "name": "@healthex/health-report",
+  "version": "0.1.0",
+  "description": "FHIR/C-CDA → patient-friendly HTML/PDF reports (Node + browser).",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "default": "./dist/esm/index.js"
+    },
+    "./render-pdf-node": {
+      "types": "./dist/types/render-pdf-node/index.d.ts",
+      "import": "./dist/esm/render-pdf-node/index.js"
+    },
+    "./render-pdf-browser": {
+      "types": "./dist/types/render-pdf-browser/index.d.ts",
+      "import": "./dist/esm/render-pdf-browser/index.js"
+    },
+    "./node-io": {
+      "types": "./dist/types/node/io.d.ts",
+      "import": "./dist/esm/node/io.js"
+    }
+  },
+  "main": "./dist/esm/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "bin": {
+    "health-report": "./dist/esm/cli/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc -p tsconfig.json && node ./scripts/build.mjs",
+    "dev": "tsc -w -p tsconfig.build.json",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "format": "prettier -w .",
+    "test": "node scripts/build.mjs && node tests/fhir.spec.mjs && node tests/llm.spec.mjs",
+    "example:llm": "node examples/node/llm-example.mjs",
+    "example:ccda": "node examples/node/ccda-example.mjs",
+    "example:ccda:allscripts": "npm run example:ccda -- \"node_modules/bluebutton/_site/bower_components/sample_ccdas/Allscripts Samples/Sunrise Clinical Manager/C-CDA_101646_20130617114506_Everyman_Adam.xml\"",
+    "smoke:ccda": "npm run build && node scripts/smoke-ccda.mjs",
+    "smoke:ccda:allscripts": "npm run build && node scripts/smoke-ccda.mjs \"node_modules/bluebutton/_site/bower_components/sample_ccdas/Allscripts Samples/Sunrise Clinical Manager/C-CDA_101646_20130617114506_Everyman_Adam.xml\"",
+    "example:fhir": "node examples/node/fhir-example.mjs",
+    "example:pdf": "node examples/node/pdf-example.mjs"
+  },
+  "peerDependencies": {
+    "puppeteer": "^23.11.1"
+  },
+  "peerDependenciesMeta": {
+    "puppeteer": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@medplum/ccda": "^4.3.10",
+    "fast-xml-parser": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "eslint": "^9.7.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.0"
+  }
+}

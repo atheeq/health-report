@@ -1,0 +1,83 @@
+{
+  "resourceType": "Observation",
+  "id": "fqoyY4FzELJDEFXKbgLWd3KVAe4H-U2NI3uQikR32U644",
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ],
+      "text": "Vital Signs"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.707679",
+        "code": "10",
+        "display": "SpO2"
+      },
+      {
+        "system": "http://open.epic.com/FHIR/StructureDefinition/observation-flowsheet-id",
+        "code": "tDtu0w3ix.PA9BaXp-Orb1w0",
+        "display": "SpO2"
+      },
+      {
+        "system": "urn:oid:1.2.246.537.6.96",
+        "code": "59417-6"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "2708-6",
+        "display": "Oxygen saturation in Arterial blood"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "2710-2",
+        "display": "Oxygen saturation in Capillary blood by Oximetry"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "59408-5",
+        "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "8716-3",
+        "display": "Vital signs"
+      }
+    ],
+    "text": "SpO2"
+  },
+  "subject": {
+    "reference": "Patient/eiGqOeNZwy5gULIhW3QqSw0BxAIp41CBIKaedoywBq.03",
+    "display": "Raghavan, Anand"
+  },
+  "encounter": {
+    "reference": "Encounter/eqhUuq-f7VYATz2e.6B5dZw3",
+    "identifier": {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.3.698084.8",
+      "value": "1323372439"
+    },
+    "display": "Office Visit"
+  },
+  "effectiveDateTime": "2024-04-19T16:52:00Z",
+  "issued": "2024-04-19T16:53:51Z",
+  "performer": [
+    {
+      "reference": "Practitioner/etJCMWhzMHXbCYo4ARp6XAw3",
+      "display": "Gloria R"
+    }
+  ],
+  "valueQuantity": {
+    "value": 100,
+    "unit": "%",
+    "system": "http://unitsofmeasure.org",
+    "code": "%"
+  }
+}

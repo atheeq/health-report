@@ -1,0 +1,230 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "exgONIAUTLiyUCuetFGNJkFYI7G0dMEvB6hKUFNbXIrk3",
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PLAC",
+            "display": "Placer Identifier"
+          }
+        ],
+        "text": "Placer Identifier"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.2.798268",
+      "value": "1902976163"
+    },
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "FILL",
+            "display": "Filler Identifier"
+          }
+        ],
+        "text": "Filler Identifier"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.3.798268.800",
+      "value": "376L674520_F2499229_CMPG_EHR"
+    },
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "FILL",
+            "display": "Filler Identifier"
+          }
+        ],
+        "text": "Filler Identifier"
+      },
+      "system": "https://open.epic.com/FHIR/76/order-accession-number/SHSSLAB",
+      "value": "376L674520_F2499229_CMPG_EHR"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/e06msAYxm7qEkQgzGnqCbbyVlNL3BqROHq9pc-nuBn2Q3",
+      "display": "COMPREHENSIVE METABOLIC PANEL"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.840.114350.1.13.76.2.7.10.798268.30",
+          "code": "LAB CHEMISTR"
+        }
+      ],
+      "text": "LAB CHEMISTRY"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        }
+      ],
+      "text": "Laboratory"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "24323-8"
+      },
+      {
+        "system": "urn:oid:2.16.840.1.113883.6.12",
+        "code": "80053",
+        "display": "PR COMPREHEN METABOLIC PANEL"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.40003839",
+        "code": "CMPG"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.2105",
+        "code": "1200160"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.2106",
+        "code": "CMPNL"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.12",
+        "code": "7937"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30027038",
+        "code": "C12"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.40003843",
+        "code": "322000"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30027038",
+        "code": "CMPG"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30100526",
+        "code": "10231"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.301116323",
+        "code": "80053"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30232125",
+        "code": "COMPREHENS099"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30338161",
+        "code": "LAB17"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.76.2.7.5.737384.30338673",
+        "code": "CMPN"
+      }
+    ],
+    "text": "COMPREHENSIVE METABOLIC PANEL W GFR"
+  },
+  "subject": {
+    "reference": "Patient/eiGqOeNZwy5gULIhW3QqSw0BxAIp41CBIKaedoywBq.03",
+    "display": "Raghavan, Anand"
+  },
+  "encounter": {
+    "reference": "Encounter/eAAYnG7.aAcIi5mz02Rmk6w3",
+    "identifier": {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.76.2.7.3.698084.8",
+      "value": "1323541525"
+    },
+    "display": "Ancillary Visit"
+  },
+  "effectiveDateTime": "2024-04-19T17:24:00Z",
+  "issued": "2024-04-20T07:14:46Z",
+  "performer": [
+    {
+      "reference": "Practitioner/evSMUeaPVS8FGvHvfx1TEqw3",
+      "type": "Practitioner",
+      "display": "Robert Vazquez, MD"
+    },
+    {
+      "reference": "Organization/fgrn2o1ZCregmngJIenPwbQ4",
+      "type": "Organization",
+      "display": "SUTTER HEALTH SHARED LABORATORY"
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/f0A3TEcP88OJl1RBdL36rh28DSdLjc11.ZEXEDQVW9GY4",
+      "display": "Component (1): NA+"
+    },
+    {
+      "reference": "Observation/f0A3TEcP88OJl1RBdL36rhxGgkhavzyp9DPSDnCwIJK04",
+      "display": "Component (1): K+"
+    },
+    {
+      "reference": "Observation/f0A3TEcP88OJl1RBdL36rh1iGlM9ShUbCosqpp.tO2Ec4",
+      "display": "Component (1): CL-"
+    },
+    {
+      "reference": "Observation/f0A3TEcP88OJl1RBdL36rh8hoE.E1fnLuaVx4KaNopsM4",
+      "display": "Component (1): TCO2"
+    },
+    {
+      "reference": "Observation/f0A3TEcP88OJl1RBdL36rhyQxMKxE02uHgvx-1dGqffs4",
+      "display": "Component (1): GLU"
+    },
+    {
+      "reference": "Observation/f0A3TEcP88OJl1RBdL36rh0ddHF5bcNuITiumY.1NlXg4",
+      "display": "Component (1): BUN"
+    },
+    {
+      "reference": "Observation/f0A3TEcP88OJl1RBdL36rh9mOER5GueqlffccdcC2vr44",
+      "display": "Component (1): CRE"
+    },
+    {
+      "reference": "Observation/f0A3TEcP88OJl1RBdL36rhy97v4cnGIjSGufSy4E-hu44",
+      "display": "Component (1): CA"
+    },
+    {
+      "reference": "Observation/f0A3TEcP88OJl1RBdL36rh4Q-mArbznUyCIQVdaKAdxM4",
+      "display": "Component (1): TP"
+    },
+    {
+      "reference": "Observation/f0A3TEcP88OJl1RBdL36rh7.AWTj4Daf-Cp4N.D48tSY4",
+      "display": "Component (1): ALB"
+    },
+    {
+      "reference": "Observation/f0A3TEcP88OJl1RBdL36rh5EHYfhc4g6h4qye-YrWTeQ4",
+      "display": "Component (1): TBIL"
+    },
+    {
+      "reference": "Observation/f0A3TEcP88OJl1RBdL36rh11dC-VXMqfLP2V30oqiexk4",
+      "display": "Component (1): AP"
+    },
+    {
+      "reference": "Observation/f0A3TEcP88OJl1RBdL36rhzqYpGqgoGm9Vtpo063-Ddw4",
+      "display": "Component (1): AST"
+    },
+    {
+      "reference": "Observation/f0A3TEcP88OJl1RBdL36rh3zBqpVqnL7f1SZmqLi.Dx84",
+      "display": "Component (1): ALT"
+    },
+    {
+      "reference": "Observation/f0A3TEcP88OJl1RBdL36rh.XAkzxjYkJ4kkIuHFspoT44",
+      "display": "Component (1): EGFR"
+    }
+  ]
+}
